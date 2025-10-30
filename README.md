@@ -87,7 +87,7 @@ dotnet run
 
 5. **Access the Portal**
 
- ##Open your browser and go to: 👉 https://localhost:5001 or http://localhost:5000
+ ## Open your browser and go to: 👉 https://localhost:5001 or http://localhost:5000
  
 ---
 
