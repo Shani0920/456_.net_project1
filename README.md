@@ -67,11 +67,11 @@ AuroraFeedbackPortal/
    git clone https://github.com/Shani0920/456_.net_project1.git
     ```
 
-**Open in Visual Studio**
+2. **Open in Visual Studio**
 
-**Open AuroraFeedbackPortal.sln (or feedback.sln).**
+Open AuroraFeedbackPortal.sln (or feedback.sln).
 
-**Restore Dependencies**
+3. **Restore Dependencies**
 
 Run
  ```
@@ -79,7 +79,7 @@ Run
  ```
  in the terminal or use Visual Studio’s build tools.
 
-**Run the Application**
+4. **Run the Application**
 
 Press F5 or use:
 ```
@@ -88,8 +88,7 @@ dotnet run
 
 **Access the Portal**
 
-Open your browser and go to:
-👉 https://localhost:5001 or http://localhost:5000
+##Open your browser and go to: 👉 https://localhost:5001 or http://localhost:5000
 ---
 
 🖼️ Screenshots
