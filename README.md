@@ -77,7 +77,6 @@ Run
  ```
  dotnet restore
  ```
- in the terminal or use Visual Studio’s build tools.
 
 4. **Run the Application**
 
@@ -86,9 +85,10 @@ Press F5 or use:
 dotnet run
 ```
 
-**Access the Portal**
+5. **Access the Portal**
 
-##Open your browser and go to: 👉 https://localhost:5001 or http://localhost:5000
+ ##Open your browser and go to: 👉 https://localhost:5001 or http://localhost:5000
+ 
 ---
 
 🖼️ Screenshots
