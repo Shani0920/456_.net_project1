@@ -92,3 +92,20 @@ dotnet run
 ---
 
 🖼️ Screenshots
+
+<img width="1900" height="975" alt="image" src="https://github.com/user-attachments/assets/49a6a1db-eba6-4daf-b52f-574c9475869b" />
+
+---
+<img width="1903" height="972" alt="image" src="https://github.com/user-attachments/assets/f093b46e-2222-4635-95cc-b129a8de5975" />
+
+---
+<img width="1884" height="972" alt="image" src="https://github.com/user-attachments/assets/2778536b-45c5-4244-bf5c-de059317c52e" />
+
+---
+<img width="1902" height="936" alt="image" src="https://github.com/user-attachments/assets/f87f9ba0-54a4-4798-a427-db7e2c38217b" />
+
+---
+
+
+
+
