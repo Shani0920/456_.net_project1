@@ -1,0 +1,50 @@
+@page
+@model RegisterModel
+@{
+    ViewData["Title"] = "Register";
+}
+
+<div class="auth-container">
+    <div class="auth-card">
+        <h2>Register</h2>
+        <p class="auth-subtitle">Create your Aurora Feedback Portal account</p>
+        
+        @if (!string.IsNullOrEmpty(Model.ErrorMessage))
+        {
+            <div class="alert alert-danger">@Model.ErrorMessage</div>
+        }
+        
+        <form method="post">
+            <div class="form-group">
+                <label for="fullname">Full Name</label>
+                <input type="text" class="form-control" id="fullname" name="Input.FullName" placeholder="John Doe" required />
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" name="Input.Email" placeholder="student@example.com" required />
+            </div>
+            
+            <div class="form-group">
+                <label for="role">Role</label>
+                <select class="form-control" id="role" name="Input.Role" required>
+                    <option value="">Select your role</option>
+                    <option value="Student">Student</option>
+                    <option value="Faculty">Faculty</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" name="Input.Password" placeholder="Enter password" required />
+            </div>
+            
+            <div class="form-group">
+                <label for="confirmpassword">Confirm Password</label>
+                <input type="password" class="form-control" id="confirmpassword" name="Input.ConfirmPassword" placeholder="Confirm password" required />
+            </div>
+            
+            <button type="submit" class="btn btn-primary-aurora btn-block">Register</button>
+        </form>
+    </div>
+</div>

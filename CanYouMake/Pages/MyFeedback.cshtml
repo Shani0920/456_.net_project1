@@ -1,0 +1,56 @@
+@page
+@model MyFeedbackModel
+@{
+    ViewData["Title"] = "My Feedback";
+}
+
+<div class="feedback-container">
+    <h1 class="page-title-teal">My Feedback</h1>
+    <p class="page-subtitle">View all your submitted feedback</p>
+    
+    <div class="feedback-history">
+        <h3>Feedback History</h3>
+        <p class="history-count">You have submitted @Model.Feedbacks.Count feedback@(Model.Feedbacks.Count != 1 ? "s" : "")</p>
+        
+        @if (Model.Feedbacks.Any())
+        {
+            <div class="table-responsive">
+                <table class="table feedback-table">
+                    <thead>
+                        <tr>
+                            <th>Course</th>
+                            <th>Faculty</th>
+                            <th>Rating</th>
+                            <th>Comment</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var feedback in Model.Feedbacks)
+                        {
+                            <tr>
+                                <td>@feedback.Course?.Name</td>
+                                <td>@feedback.Course?.FacultyName</td>
+                                <td>
+                                    <div class="rating-display">
+                                        @for (int i = 1; i <= 5; i++)
+                                        {
+                                            <span class="star @(i <= feedback.Rating ? "filled" : "")">★</span>
+                                        }
+                                        <span class="rating-text">@feedback.Rating/5</span>
+                                    </div>
+                                </td>
+                                <td>@feedback.Comment</td>
+                                <td>@feedback.SubmittedAt.ToString("MM/dd/yyyy")</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        }
+        else
+        {
+            <p class="no-feedback">You haven't submitted any feedback yet. <a href="/SubmitFeedback">Submit your first feedback</a></p>
+        }
+    </div>
+</div>

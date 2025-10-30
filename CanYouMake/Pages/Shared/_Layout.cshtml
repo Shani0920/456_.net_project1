@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Aurora Feedback Portal</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav class="navbar-aurora">
+            <div class="container-aurora">
+                <a class="navbar-brand-aurora" href="/">Aurora</a>
+                <div class="navbar-menu">
+                    @if (User.Identity?.IsAuthenticated == true)
+                    {
+                        <a href="/SubmitFeedback" class="nav-link-aurora">Submit Feedback</a>
+                        <a href="/MyFeedback" class="nav-link-aurora">My Feedback</a>
+                        <a href="/Logout" class="nav-link-aurora">Logout</a>
+                    }
+                    else
+                    {
+                        <a href="/" class="nav-link-aurora">Home</a>
+                        <a href="/Login" class="nav-link-aurora">Login</a>
+                        <a href="/Register" class="btn-register-aurora">Register</a>
+                    }
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        @RenderBody()
+    </main>
+
+    <footer class="footer-aurora">
+        <div class="container-aurora">
+            © 2025 Aurora Feedback Portal — Built for Better Education 💙
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
