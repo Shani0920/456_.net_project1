@@ -5,18 +5,6 @@ It allows institutions or organizations to collect, manage, and analyze feedback
 
 ---
 
-## 📋 Table of Contents
-- [About the Project](#about-the-project)
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Project Structure](#project-structure)
-- [Installation & Setup](#installation--setup)
-- [Screenshots](#screenshots)
-- [Future Enhancements](#future-enhancements)
-- [Contributors](#contributors)
-
----
-
 ## 💡 About the Project
 The **Aurora Feedback Portal** simplifies the process of gathering and evaluating feedback.  
 It provides a digital platform for students, employees, or customers to submit their opinions while enabling admins to view summarized reports.
